@@ -17,6 +17,7 @@ by Lucas Rothamel <lucas@rothamel.info>
 * Open the php docker shell by running `shell.sh` from the devilbox direcory
 * copy `.env.dist` to `.env`, and making adjustments as necessary
 * run ``setup_mysql_in_devilbox.sh`` to setup the database
+* run `composer install` to install all dependencies
 * run the `reset_db.sh` to reset the database (by dropping), and run all fixtures on the empty database
 
 #### Documentation:
