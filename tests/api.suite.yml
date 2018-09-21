@@ -1,0 +1,14 @@
+class_name: ApiTester
+modules:
+    enabled:
+        - Symfony:
+            app_path: src
+            environment: test
+        - REST:
+            depends: Symfony
+        - Doctrine2:
+            depends: Symfony
+            cleanup: true
+            populate: true
+            populator: 'bash reset_db.sh'
+        - App\Tests\Helper\Api
